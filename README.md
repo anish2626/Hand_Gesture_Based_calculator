@@ -4,14 +4,21 @@ README
  This project implements a gesture-based calculator using computer vision and deep learning.
  The system captures hand gestures via a webcam, preprocesses the images, and predicts
  numerical gestures to perform basic arithmetic operations.
+ 
  File Structure
+ 
  ● createDataset.py: Captures images of hand gestures, preprocesses them, and
  saves them to a directory for model training.
  ● CNN.ipynb: Implements a Convolutional Neural Network (CNN) to train the gesture
  recognition model.
  ● main.py: Uses the trained model to predict gestures in real-time and perform
  calculations.
+
+
+ 
  Code Workflow
+
+ 
  createDataset.py
  1. Objective: Collect and preprocess hand gesture images.
  2. KeySteps:
@@ -24,7 +31,11 @@ README
  directory.
  3. Output:
  ○ Asetofpreprocessed binary images saved for each frame.
+
+
 CNN.ipynb
+
+
  1. Objective: Train a deep learning model to recognize gestures.
  2. Dataset Preparation:
  ○ Loadsgesture images from the dataset directory (gestures/gestures).
@@ -44,7 +55,13 @@ CNN.ipynb
  5. Evaluation:
  ○ Visualizes input gestures.
  ○ Outputs model performance metrics (accuracy, loss).
+
+
+
  main.py
+
+
+ 
  1. Objective: Perform real-time gesture recognition and calculations.
  2. Setup:
  ○ Loadsthe trained model (model.h5).
@@ -63,7 +80,11 @@ CNN.ipynb
  6. User Interaction:
  ○ PressEscto exit.
 ○ Usesascrollbar to view longer results.
+
+
  Usage Instructions
+
+ 
  1. Dataset Creation:
  ○ RuncreateDataset.py.
  ○ Position your hand in the ROI (green box).
@@ -76,7 +97,11 @@ CNN.ipynb
  ○ Runmain.py.
  ○ Perform gestures in the ROI, and the calculator will display predictions and sums
  in the result window.
+
+
  Key Features
+
+ 
  ● Gesture Recognition: Accurately identifies hand gestures for numbers.
  ● Real-time Processing: Displays predictions and results instantly.
  ● User-friendly Interface: Highlights gestures in a green bounding box and displays
@@ -91,6 +116,9 @@ CNN.ipynb
  ○ matplotlib
  ○ sklearn
  ● Webcamforcapturing gestures.
+
+ 
 Acknowledgments
+
  This project uses OpenCV for image processing and Keras for deep learning. The methodology
  aligns with real-world gesture recognition and calculator use cases
